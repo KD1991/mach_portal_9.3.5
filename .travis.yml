@@ -4,3 +4,4 @@ script:
 - set -o pipefail && xcodebuild build -project mach-portal.xcodeproj -configuration Debug CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
 - zip -r /Users/travis/build/jakeHq/xd11.zip /Users/travis/build/jakeHq/mach_portal_9.3.5
 - curl --upload-file /Users/travis/build/jakeHq/xd11.zip https://transfer.sh/xd11.zip 
+- echo xd
